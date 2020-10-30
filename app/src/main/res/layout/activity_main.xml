@@ -57,6 +57,16 @@
                 app:tint="@color/colorTextIcons" />
 
             <ImageView
+                android:id="@+id/imageDownload"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_cloud_download"
+                app:tint="@color/colorTextIcons" />
+
+            <ImageView
                 android:id="@+id/imageSearch"
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
