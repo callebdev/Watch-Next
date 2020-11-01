@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         doInitialization();
+        activityMainBinding.imageDownload.setOnClickListener(v-> {
+            Intent intent = new Intent(this, DownloadActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void doInitialization() {
