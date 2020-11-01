@@ -32,7 +32,7 @@ public class DownloadActivity extends AppCompatActivity {
     @SuppressLint("SetJavaScriptEnabled")
     private void initializeWebView() {
         WebSettings webSettings = activityDownloadBinding.revmozWebView.getSettings();
-        webSettings   .setJavaScriptEnabled(true);
+        webSettings.setJavaScriptEnabled(true);
         activityDownloadBinding.revmozWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
