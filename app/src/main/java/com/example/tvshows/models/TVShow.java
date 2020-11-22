@@ -1,9 +1,16 @@
 package com.example.tvshows.models;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.google.gson.annotations.SerializedName;
 
-public class TVShow {
+import java.io.Serializable;
 
+@Entity(tableName = "tvShows")
+public class TVShow implements Serializable {
+
+    @PrimaryKey
     @SerializedName("id")
     private int id;
 
@@ -58,5 +65,37 @@ public class TVShow {
 
     public String getThumbnail() {
         return thumbnail;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPermalink(String permalink) {
+        this.permalink = permalink;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setNetwork(String network) {
+        this.network = network;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
     }
 }

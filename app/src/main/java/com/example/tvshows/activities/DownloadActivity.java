@@ -39,7 +39,6 @@ public class DownloadActivity extends AppCompatActivity {
                 super.onPageStarted(view, url, favicon);
                 activityDownloadBinding.setIsProcessing(true);
             }
-
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
