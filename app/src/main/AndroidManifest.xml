@@ -14,7 +14,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activities.WatchlistActivity"></activity>
+        <activity android:name=".activities.SearchActivity"></activity>
+        <activity android:name=".activities.WatchlistActivity" />
         <activity android:name=".activities.DownloadActivity" />
         <activity android:name=".activities.TVShowDetailsActivity" />
         <activity android:name=".activities.MainActivity">

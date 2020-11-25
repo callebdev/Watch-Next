@@ -1,4 +1,5 @@
 package com.example.tvshows.activities;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -15,6 +16,7 @@ import com.example.tvshows.databinding.ActivityMainBinding;
 import com.example.tvshows.listeners.TVShowsListener;
 import com.example.tvshows.models.TVShow;
 import com.example.tvshows.viewmodels.MostPopularTVShowsViewModel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,10 +34,6 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         doInitialization();
-        activityMainBinding.imageDownload.setOnClickListener(v-> {
-            Intent intent = new Intent(this, DownloadActivity.class);
-            startActivity(intent);
-        });
     }
 
     private void doInitialization() {
@@ -55,8 +53,9 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
                 }
             }
         });
-        activityMainBinding.imageWatchlist.setOnClickListener(v-> startActivity(new Intent(getApplicationContext(), WatchlistActivity.class)));
-
+        activityMainBinding.imageWatchlist.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), WatchlistActivity.class)));
+        activityMainBinding.imageDownload.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), DownloadActivity.class)));
+        activityMainBinding.imageSearch.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), SearchActivity.class)));
         getMostPopularTVShows();
     }
 
