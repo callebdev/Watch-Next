@@ -16,7 +16,7 @@ import com.example.tvshows.models.TVShow;
 
 import java.util.List;
 
-public class WatchlistAdapter extends RecyclerView.Adapter<WatchlistAdapter.TVShowViewHolder>{
+public class WatchlistAdapter extends RecyclerView.Adapter<WatchlistAdapter.TVShowViewHolder> {
 
     private List<TVShow> tvShows;
     private LayoutInflater layoutInflater;
@@ -64,7 +64,7 @@ public class WatchlistAdapter extends RecyclerView.Adapter<WatchlistAdapter.TVSh
             itemContainerTvShowBinding.setTvShow(tvShow);
             itemContainerTvShowBinding.executePendingBindings();
             itemContainerTvShowBinding.getRoot().setOnClickListener(v -> watchlistListener.onTVShowClicked(tvShow));
-            itemContainerTvShowBinding.imageDelete.setOnClickListener(v->{
+            itemContainerTvShowBinding.imageDelete.setOnClickListener(v -> {
                 watchlistListener.removeTVShowFromWatchlist(tvShow, getAdapterPosition());
             });
             itemContainerTvShowBinding.imageDelete.setVisibility(View.VISIBLE);
