@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Watch-Next</string>
+    <string name="tv_shows_most_popular">Séries | Populares</string>
+    <string name="read_more">Ver mais</string>
+    <string name="read_less">Ver menos</string>
+    <string name="u2022">•</string>
+    <string name="website">Website</string>
+    <string name="episodes">Episódios</string>
+    <string name="added_to_watchlist">Série adicionada à watchlist</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="removed_from_watchlist">Removida da watchlist</string>
+    <string name="search_tv_show">Procurar série</string>
+</resources>
