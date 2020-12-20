@@ -21,7 +21,6 @@ It makes requests to [EPISODATE API](https://www.episodate.com/api) and parses t
   <tr>
     <th width="25%"><img src="https://github.com/callebdev/Watch-Next/blob/main/Screens/Screenshot_20201122-135547_framed.png"></th>
     <th width="25%"><img src="https://github.com/callebdev/Watch-Next/blob/main/Screens/Screenshot_20201122-135742_framed%20(2).png"></th>
-    <th width="25%"><img src="https://github.com/callebdev/Watch-Next/blob/main/Screens/Screenshot_20201122-140026_framed.png"></th>
   </tr>
 </table>
 
