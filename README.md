@@ -4,9 +4,7 @@ Watch Next is an android application built using the MVVM pattern, RXJava, Datab
 Watch-Next basically displays a list of TV shows, allows you to fuzzy search for a TV show and create a watch list.
 It makes requests to [EPISODATE API](https://www.episodate.com/api) and parses the JSON response to display the TV Shows.
 
-<p align="center">
-  <img width="200" height="200" src="https://github.com/callebdev/Watch-Next/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
-</p>
+<a href='https://play.google.com/store/apps/details?id=com.callebdev.tvshows&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 ## Screens
 
